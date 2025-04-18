@@ -43,6 +43,7 @@ import com.robertx22.mine_and_slash.gui.inv_gui.GuiInventoryGrids;
 import com.robertx22.mine_and_slash.gui.screens.OpenInvGuiScreen;
 import com.robertx22.mine_and_slash.gui.screens.OpenJewelsScreen;
 import com.robertx22.mine_and_slash.gui.screens.OpenSkillGems;
+import com.robertx22.mine_and_slash.gui.screens.guild.GuildScreen;
 import com.robertx22.mine_and_slash.gui.screens.skill_tree.AscendancyTree;
 import com.robertx22.mine_and_slash.gui.screens.skill_tree.TalentsScreen;
 import com.robertx22.mine_and_slash.gui.screens.spell.SpellSchoolScreen;
@@ -255,6 +256,7 @@ public class MainHubScreen extends BaseScreen implements INamedScreen {
             rightButtons.add(new AscendancyTree());
         }
         rightButtons.add(new OpenJewelsScreen());
+        rightButtons.add(new GuildScreen());
 
         if (mc.level.dimension().location().equals(DungeonMain.DIMENSION_KEY)) {
             if (Load.player(mc.player).prophecy.affixOffers.isEmpty()) {

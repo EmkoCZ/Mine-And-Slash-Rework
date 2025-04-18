@@ -336,6 +336,7 @@ public enum Words implements IAutoLocName {
 
     Character("Character"),
     Characters("Characters"),
+    Guilds("Guilds"),
     Stats("Stats"),
     Stat("Stat"),
     Tier("Tier"),
